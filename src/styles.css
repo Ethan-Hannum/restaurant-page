@@ -70,7 +70,13 @@ div {
     grid-row: 1;
 }
 
+#quote {
+  position: absolute;
+  color: white;
+}
+
 #img-container {
+    position: relative;
     flex: 0 1 auto;
     height: 100%;
 }
