@@ -1,3 +1,10 @@
+@font-face {
+  font-family: average-sans;
+  src: url(./assets/AverageSans-Regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -54,19 +61,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: antiquewhite;
-}
-
-div {
-    border: 1px black solid;
+  background-color:blanchedalmond;
+  font-family: average-sans;
 }
 
 header {
   display: flex;
+  border-bottom: 2px black solid;
+}
+
+nav {
+  margin: auto 0;
 }
 
 #logo {
   margin-left: auto;
+  margin-right: 18px;
+  align-self: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: darkslategrey;
 }
 
 #content {
@@ -80,11 +94,18 @@ header {
     display: flex;
     grid-column: 1;
     grid-row: 1;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 #quote {
   position: absolute;
-  color: white;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  bottom: 700px;
+  left: 375px;
+  font-size: 48px;
 }
 
 #img-container {
@@ -93,27 +114,80 @@ header {
     height: 100%;
 }
 
-#hours {
-    grid-column: 2;
-    grid-row: 1;
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 1;
 }
+
+#hours {
+  justify-items: center;
+}
+
+#hours > h2 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+#questions {
+  margin: auto auto 0 auto;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+li {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
 
 #reviews {
     display: flex;
     grid-column: 1 / 3;
     grid-row: 2;
+    border-top: 2px solid black;
 }
 
 .review-container {
   flex: 1 1 auto;
+  border: 1px solid gray;
+  background-color:lavenderblush;
+  border-radius: 26px;
+  margin: 12px 4px;
 }
 
 .review-title {
   font-size: 24px;
-  font-weight: 550;
+  font-weight: 600;
+  margin-left: 18px;
+  margin-bottom: -6px;
 }
 
 .review-name {
   font-size: 14px;
+  margin-left: 16px;
+}
+
+.review-body {
+  margin-left: 12px;
+  font-size: 18px;
+}
+
+button {
+  background-color: antiquewhite;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+button:nth-child(1) {
+  margin-left: 18px;
 }
 
