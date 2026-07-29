@@ -141,5 +141,15 @@ const homePage = (() => {
 
     };
 
-    return { build };
+    const destroy = () => {
+        const removeOne = (target) => {
+            const element = document.querySelector(target);
+            element.remove();
+        }
+        removeOne("#reviews")
+        removeOne("#sidebar");
+        removeOne("#quote-container");
+    }
+
+    return { build, destroy };
 })();

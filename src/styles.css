@@ -137,7 +137,7 @@ li:last-child {
 }
 
 #questions {
-  margin: auto auto 0 auto;
+  margin: auto auto 0 4px;
   font-weight: 600;
   font-size: 22px;
 }
