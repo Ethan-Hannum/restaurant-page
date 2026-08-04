@@ -21,6 +21,4 @@ const building = (() => {
 
 menu.addEventListener("click", building.swapMenu);
 
-homePage.build();
-
 console.log("Webpack is working!");
