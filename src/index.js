@@ -1,5 +1,6 @@
 import "./styles.css";
 import { homePage } from "./homePage.js";
+import { menuPage } from "./menuPage.js";
 
 const home = document.querySelector("#home");
 const menu = document.querySelector("#menu");
@@ -18,6 +19,8 @@ const building = (() => {
 
     return { swapMenu };
 })();
+
+menuPage.build();
 
 menu.addEventListener("click", building.swapMenu);
 

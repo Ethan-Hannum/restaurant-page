@@ -83,11 +83,15 @@ nav {
   color: darkslategrey;
 }
 
-#content {
-    height: 100vh;
+.content-home {
+  height: 100vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 4fr minmax(150px, 1fr);
+}
+
+.content-menu {
+  display: block;
 }
 
 #quote-container {
@@ -212,13 +216,13 @@ button:nth-child(1) {
 .menu-section {
   display: flex;
   flex-direction: column;
-  margin-left: 240px;
+  margin-left: 160px;
 }
 
 .menu-section > h2 {
   text-decoration: underline;
   align-self: center;
-  margin-right: 240px;
+  margin-right: 160px;
   font-size: 32px;
 }
 

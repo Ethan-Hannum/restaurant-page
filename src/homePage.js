@@ -5,6 +5,8 @@ const homePage = (() => {
 
     // Will create elements, then add content and selectors to them
     const build = () => {
+        content.classList.add("content-home");
+
         // "quote-container" div
         const quoteContainer = document.createElement("div");
         quoteContainer.id = "quote-container";
@@ -142,6 +144,8 @@ const homePage = (() => {
     };
 
     const destroy = () => {
+        content.classList.remove("content-home");
+
         const removeOne = (target) => {
             const element = document.querySelector(target);
             element.remove();
