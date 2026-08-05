@@ -212,14 +212,13 @@ button:nth-child(1) {
 .menu-section {
   display: flex;
   flex-direction: column;
-  margin-left: 200px;
-  margin-right: 160px;
+  margin-left: 240px;
 }
 
 .menu-section > h2 {
   text-decoration: underline;
   align-self: center;
-  margin-right: 40px;
+  margin-right: 240px;
   font-size: 32px;
 }
 
@@ -230,8 +229,10 @@ button:nth-child(1) {
   row-gap: 18px;
 }
 
-.menu-list > li {
+.menu-item {
   border-bottom: 1px gray dotted; 
+  padding-bottom: 2px;
+  margin-right: -25px;
 }
 
 .appetizers > li:nth-child(3) {
