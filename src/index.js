@@ -20,8 +20,6 @@ const building = (() => {
     return { swapMenu };
 })();
 
-menuPage.build();
-
 menu.addEventListener("click", building.swapMenu);
 
 console.log("Webpack is working!");
