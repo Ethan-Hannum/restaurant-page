@@ -209,5 +209,14 @@ const menuPage = (() => {
         dessert.appendChild(soufflePrice);
     }
 
-    return { build };
+    const destroy = () => {
+        const removeOne = (target) => {
+            const element = document.querySelector(target);
+            element.remove();
+        }
+
+        removeOne("#menu-container");
+    }
+
+    return { build, destroy };
 })();

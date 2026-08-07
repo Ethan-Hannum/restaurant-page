@@ -64,5 +64,14 @@ const aboutPage = (() => {
         address.append("Phoenix, AZ 85022");
     }
 
-    return { build };
+    const destroy = () => {
+        const removeOne = (target) => {
+            const element = document.querySelector(target);
+            element.remove();
+        }
+
+        removeOne("#about-container");
+    }
+
+    return { build, destroy };
 })();
