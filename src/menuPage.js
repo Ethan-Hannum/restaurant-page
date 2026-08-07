@@ -3,9 +3,7 @@ export { menuPage };
 const menuPage = (() => {
     const content = document.querySelector("#content");
 
-    const build = () => {
-        content.classList.add("content-menu");  
-        
+    const build = () => { 
         const menuContainer = document.createElement("div");
         menuContainer.id = "menu-container"
         content.appendChild(menuContainer);
